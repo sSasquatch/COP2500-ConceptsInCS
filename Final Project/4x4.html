@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type="text/javascript" src="scripts/4x4_script.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/puzzle_style.css">
+    <title>4x4 Puzzle</title>
+  </head>
+
+  <body onLoad="start()">
+    <div id="name">
+      <form onsubmit="changeText()" id="player_name">
+        Name: <input type="text" name="name" value=""><br>
+        <input type="Submit" value="Submit">
+        <br>
+      </form>
+    </div>
+    <p id="player_name_text"></p>
+    <p id="timer"></p>
+    <center>
+      <table id="myTable">
+        <tr>
+          <td>10</td>
+          <td>12</td>
+          <td>13</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>14</td>
+          <td>15</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>2</td>
+          <td style="background-color:white;"></td>
+        </tr>
+      </table>
+      <br>
+      <form id="reset_button">
+        <input type="button" onClick="history.go(0)" value="Restart">
+      </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+table, td {
+  border: 5px solid #558c89;
+  text-align: center;
+  background-color: #74afad;
+  border-style: groove;
+  color: #ececea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+}
+
+input[type=button] {
+  background-color: white; 
+  color: #d9853b; 
+  border: 2px solid #558c89;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=button]:hover {
+  background-color: #74afad;
+  color: #ececea;
+}
+
+#timer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #74afad;
+}
+
+#timer b {
+  color: #558c89
+}
+
+#name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #558c89;
+}
+
+html {
+  background-color: #ececea;
+}

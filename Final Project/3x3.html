@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type="text/javascript" src="scripts/3x3_script.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/puzzle_style.css">
+    <title>3x3 Puzzle</title>
+  </head>
+
+  <body onLoad="start()">
+    <div id="name">
+      <form onsubmit="changeText()" id="player_name">
+        Name: <input type="text" name="name" value=""><br>
+        <input type="Submit" value="Submit">
+        <br>
+      </form>
+    </div>
+    <p id="player_name_text"></p>
+    <p id="timer"></p>
+    <center>
+      <table id="myTable">
+        <tr>
+          <td>8</td>
+          <td>1</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>2</td>
+          <td style="background-color:white;"></td>
+        </tr>
+      </table>
+      <br>
+      <form>
+        <input type="button" onClick="history.go(0)" value="Restart">
+      </form>
+    </center>
+  </body>
+</html>
