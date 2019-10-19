@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>COP2500C HW 2</title>
+    <h1>Click the buttons below!</h1>
+  </head>
+  
+  <body>
+    <button onclick="pickIntegers()">Pick your numbers.</button>
+    <button onclick="integerSearch(list)">Find a number.</button>
+    
+    <p id="number_print"></p>
+    <p id="search_print"></p>
+    
+    <script type="text/javascript">
+      var list=[];
+      
+      function bubbleSort(a) {
+        var swap;
+        do {
+          swap = false;
+          for (var i=0; i < a.length-1; i++) {
+            if (a[i] > a[i+1]) {
+              var temp = a[i];
+              a[i] = a[i+1];
+              a[i+1] = temp;
+              swap = true;
+            }
+          }
+        }
+        while (swap);
+        return swap;
+      }
+      
+      function pickIntegers() {
+        var n = prompt("Please enter an number.")
+        for (x=0; x < n; x++) {
+          var y = prompt("Please enter an number.")
+          list.push(y);
+        }
+        bubbleSort(list);
+        document.getElementById("number_print").innerHTML = ("The numbers in the list are: " + list);
+      }
+      
+      function integerSearch(list) {
+        var x = prompt("Please enter a number to search for in your list.");
+        var min = 0;
+        var max = list.length-1;
+        while(min <= max) {
+          var middle=parseInt((min+max) / 2);
+          if (x == list[middle])
+            return document.getElementById("search_print").innerHTML = (x + " is in the list!");
+          else if (x < list[middle])
+            max = middle-1;
+          else if (x > list[middle])
+            min = middle+1;
+        }
+        return document.getElementById("search_print").innerHTML = (x + " is not in the list.");
+      }
+    </script>  
+  </body>
+  
+</html>

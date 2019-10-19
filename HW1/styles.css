@@ -1,0 +1,88 @@
+h1 {
+  font-size: 200%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #d9853b;
+}
+
+p {
+  font-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #558c89;
+}
+
+body {
+  background-color: #ececea;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #558c89;
+}
+
+#nav li {
+  font-size: 150%;
+  float: left;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#nav li a {
+  display: block;
+  color: #ececea;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px;
+}
+
+#nav li a:hover {
+  background-color: #74afad;
+  color: #d9853b;
+}
+
+#pic1 {
+  float: left;
+  padding: 16px;
+}
+
+#pic img {
+  height: 900px;
+}
+
+#content {
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#courses ul {
+  list-style-type: none;
+}
+
+#courses ul li {
+  font-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #558c89;
+}
+
+fieldset {
+  border-color: #558c89;
+  width: 99%;
+  padding: 10px;
+}
+
+fieldset legend {
+  color: #558c89;
+}
+
+#t1 {
+  border: 2px solid #558c89;
+  padding: 5px; 
+  width: 100%;
+  text-align: center;
+  border-spacing: 5px;
+  background-color: #74afad;
+  color: #ececea;
+  font-size: 150%
+}
